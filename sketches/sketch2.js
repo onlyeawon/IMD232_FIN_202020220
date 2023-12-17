@@ -52,7 +52,7 @@ let sketchB = function (p) {
       var circleX = centerX + p.cos(angle) * 250;
       var circleY = centerY + p.sin(angle) * 250;
 
-      // 중력 벡터 업데이트
+      // 중력 벡터
       circle.gravity.set(centerX - circle.x, centerY - circle.y);
       circle.gravity.normalize();
       circle.gravity.mult(1.4); // 중력의 세기
@@ -64,7 +64,6 @@ let sketchB = function (p) {
       var x = p.lerp(circle.x, circleX, faderX);
       var y = p.lerp(circle.y, circleY, faderX);
 
-      // 이 부분에서 색상값을 랜덤으로 생성하여 사용합니다.
       var sparkleAlpha = p.map(p.sin(circle.sparkle), -1, 1, 100, 255);
       var fixedColor = p.color(255, 255, 150, sparkleAlpha);
       p.fill(fixedColor);

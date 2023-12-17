@@ -57,7 +57,7 @@ img {
   border-radius: 10px;
 }
 
-.container.imgContainer > img {
+.imgContainer > img {
   max-width: max(5%, 140px);
   object-fit: cover;
   overflow: hidden;
@@ -152,11 +152,12 @@ img {
   border-radius: 5px;
   text-align: center;
   color: #ffffff;
+  padding-inline: 1.875rem;
 }
 
 p {
   line-height: 30px;
   padding-top: 20px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
 }

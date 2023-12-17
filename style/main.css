@@ -24,7 +24,7 @@ body {
   position: absolute;
   inset: 0;
   overflow: hidden;
-  width: 100%;
+  width: 80vw;
   object-fit: cover;
   height: 85vh;
 }

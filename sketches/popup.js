@@ -11,6 +11,5 @@ $(document).mouseup(function (e) {
   var popContent = $('#popup');
   if (popContent.has(e.target).length === 0) {
     popup.classList.add('hide');
-    // popContent.addClass('hide');   제이쿼리
   }
 });

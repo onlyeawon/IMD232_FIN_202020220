@@ -148,12 +148,12 @@ img {
 
 #popup .content {
   max-width: 500px;
-  padding: 20px;
+  padding-block: 30px;
   background: #2f2f2f;
   border-radius: 10px;
   text-align: center;
   color: #ffffff;
-  padding-inline: 1.875rem;
+  padding-inline: 3.125rem;
 }
 
 p {
@@ -161,6 +161,10 @@ p {
   padding-top: 20px;
   color: #ffffff;
   font-size: 13px;
+}
+
+span {
+  color: rgb(254, 255, 236);
 }
 
 button {

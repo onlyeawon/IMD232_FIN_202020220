@@ -45,7 +45,7 @@ body {
 }
 @media (width < 50rem) {
   #mainImg {
-    max-width: max(5%, 110px);
+    max-width: max(5%, 130px);
   }
 }
 
@@ -56,7 +56,7 @@ body {
 }
 @media (width < 50rem) {
   #textImg {
-    max-width: max(5%, 90px);
+    max-width: max(5%, 120px);
   }
 }
 
@@ -67,7 +67,7 @@ img {
 }
 @media (width < 50rem) {
   img {
-    max-width: max(5%, 60px);
+    max-width: max(5%, 80px);
     border: 1.5px solid #ffffff;
   }
 }
@@ -180,4 +180,9 @@ p {
 
 span {
   color: rgb(245, 255, 51);
+}
+
+button {
+  color: black;
+  background: none;
 }

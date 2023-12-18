@@ -1,11 +1,14 @@
+// 모티브되는 참고 자료
+// Generative Design
+// http://www.generative-gestaltung.de/2/sketches/?02_M/M_1_2_01
+
 let sketchB = function (p) {
   let dom = document.querySelector('#sketchBGoesHere');
-  console.log(dom);
   let domWidth = dom.clientWidth;
   let domHeight = dom.clientHeight;
   let canvas;
   var actRandomSeed = 0;
-  var count = 150;
+  var count = 180;
   var circles = [];
 
   p.setup = function () {
@@ -30,14 +33,11 @@ let sketchB = function (p) {
     p.clear();
 
     var faderX = p.mouseX / p.width;
-
     var centerX = p.width / 2;
     var centerY = p.height / 2;
     var gradientRadius = 90;
     var c1 = p.color('#00000088');
     var c2 = p.color('#FFFFFF');
-
-    // 중심 원 그리기
 
     for (var r = gradientRadius; r > 0; r--) {
       var inter = p.map(r, gradientRadius, 0, 0, 1);
@@ -54,7 +54,7 @@ let sketchB = function (p) {
 
       circle.gravity.set(centerX - circle.x, centerY - circle.y);
       circle.gravity.normalize();
-      circle.gravity.mult(1.4); // 중력의 세기
+      circle.gravity.mult(1.9); // 중력의 세기
 
       circle.x += circle.gravity.x;
       circle.y += circle.gravity.y;
@@ -67,7 +67,6 @@ let sketchB = function (p) {
       p.fill(fixedColor);
       p.ellipse(x, y, 10, 10);
 
-      // 각도 및 반짝임 업데이트
       circle.angle += 0.01;
       circle.sparkle += 0.05;
     }

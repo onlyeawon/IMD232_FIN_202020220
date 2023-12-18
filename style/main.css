@@ -24,7 +24,6 @@ body {
   position: absolute;
   inset: 0;
   overflow: hidden;
-  width: 80vw;
   object-fit: cover;
   height: 85vh;
 }
@@ -40,13 +39,13 @@ body {
 }
 
 #mainImg {
-  padding-bottom: 40px;
-  max-width: max(5%, 300px);
+  padding-bottom: 50px;
+  max-width: max(5%, 290px);
   border: 0px;
 }
 
 #textImg {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   max-width: max(5%, 200px);
   border: 0px;
 }
@@ -149,7 +148,7 @@ img {
 #popup .content {
   max-width: 500px;
   padding-block: 30px;
-  background: #2f2f2f;
+  background: #282828ff;
   border-radius: 10px;
   text-align: center;
   color: #ffffff;
@@ -164,5 +163,5 @@ p {
 }
 
 span {
-  color: rgb(254, 255, 236);
+  color: rgb(245, 255, 51);
 }

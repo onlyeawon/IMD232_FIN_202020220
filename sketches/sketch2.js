@@ -21,7 +21,7 @@ let sketchB = function (p) {
         y: p.random(0, p.height),
         angle: p.random(p.TWO_PI),
         sparkle: p.random(255),
-        gravity: p.createVector(0, 0), // 중심으로의 중력 벡터
+        gravity: p.createVector(0, 0),
       });
     }
   };
@@ -52,7 +52,6 @@ let sketchB = function (p) {
       var circleX = centerX + p.cos(angle) * 250;
       var circleY = centerY + p.sin(angle) * 250;
 
-      // 중력 벡터
       circle.gravity.set(centerX - circle.x, centerY - circle.y);
       circle.gravity.normalize();
       circle.gravity.mult(1.4); // 중력의 세기

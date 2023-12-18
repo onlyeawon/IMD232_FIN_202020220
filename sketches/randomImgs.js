@@ -5,8 +5,7 @@ imgContainers.forEach((container) => {
 
   const containerWidth = container.clientWidth;
   const containerHeight = container.clientHeight;
-  const imageSpacing = 200; // 이미지 간격
-
+  const imageSpacing = 200;
   const usedPositions = []; // 이미지가 배치된 위치를 저장하는 배열
 
   function getRandomPosition(imgWidth, imgHeight) {

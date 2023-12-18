@@ -13,3 +13,5 @@ $(document).mouseup(function (e) {
     popup.classList.add('hide');
   }
 });
+
+// 팝업 코드 참고

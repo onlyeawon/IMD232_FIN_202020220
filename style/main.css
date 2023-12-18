@@ -43,17 +43,33 @@ body {
   max-width: max(5%, 290px);
   border: 0px;
 }
+@media (width < 50rem) {
+  #mainImg {
+    max-width: max(5%, 110px);
+  }
+}
 
 #textImg {
   padding-bottom: 50px;
   max-width: max(5%, 200px);
   border: 0px;
 }
+@media (width < 50rem) {
+  #textImg {
+    max-width: max(5%, 90px);
+  }
+}
 
 img {
   max-width: max(5%, 120px);
   border: 3px solid #ffffff;
   border-radius: 10px;
+}
+@media (width < 50rem) {
+  img {
+    max-width: max(5%, 60px);
+    border: 1.5px solid #ffffff;
+  }
 }
 
 .imgContainer > img {

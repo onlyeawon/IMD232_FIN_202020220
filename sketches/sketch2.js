@@ -56,7 +56,6 @@ let sketchB = function (p) {
       circle.gravity.normalize();
       circle.gravity.mult(1.4); // 중력의 세기
 
-      // 중력에 따라 위치 업데이트
       circle.x += circle.gravity.x;
       circle.y += circle.gravity.y;
 
